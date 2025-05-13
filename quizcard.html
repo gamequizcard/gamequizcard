@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemeriksa Jawaban</title>
+  <link rel="stylesheet" href="quizcard.css">
+</head>
+<body>
+  <div class="container">
+    <h2>CEK JAWABAN KAMU</h2>
+
+    <label for="kode">Masukkan Kode Soal:</label>
+    <input type="text" id="kode" placeholder="Misal: H0">
+
+    <label for="jawaban">Masukkan Jawaban:</label>
+    <input type="text" id="jawaban" placeholder="jawaban">
+
+    <button onclick="cekJawaban()">Cek Jawaban</button>
+
+    <p id="hasil"></p>
+  </div>
+
+  <!-- Audio feedback -->
+  <audio id="audioBenar" src="benar.mp3"></audio>
+  <audio id="audioSalah" src="salah.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
